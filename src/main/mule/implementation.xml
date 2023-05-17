@@ -18,7 +18,7 @@ http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/m
 				<fixed-frequency frequency="3" timeUnit="MINUTES"/>
 			</scheduling-strategy>
 		</scheduler>
-		<logger level="INFO" doc:name="Loggers" doc:id="fa5229f2-7fb5-4253-bedb-5d3709667946" message="The cursor is in JMS Publish to fetch the record of which Status = 'New'::::: #[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="fa5229f2-7fb5-4253-bedb-5d3709667946" message="The cursor is in JMS Publish to fetch the record of which Status = 'New'::::: #[payload]"/>
 		<ee:transform doc:name="fetching the records when status ='New&quot;" doc:id="f43d5ac0-a6f6-4cf8-a139-7e38407d5cb1" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
